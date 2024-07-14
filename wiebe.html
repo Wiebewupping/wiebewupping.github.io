@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<div class="mistvideo" id="gewoonwiebefmserver_VGSLd9y1rtJf">
+  <noscript>
+    <a href="http://localhost:8080/gewoonwiebefmserver.html" target="_blank">
+      Click here to play this video
+    </a>
+  </noscript>
+  <script>
+    var a = function(){
+      mistPlay("gewoonwiebefmserver",{
+        target: document.getElementById("gewoonwiebefmserver_VGSLd9y1rtJf")
+      });
+    };
+    if (!window.mistplayers) {
+      var p = document.createElement("script");
+      p.src = "http://192.168.178.200:8080/player.js"
+      document.head.appendChild(p);
+      p.onload = a;
+    }
+    else { a(); }
+  </script>
+</div>
+<h1>als je geen beeld kriigt clik op <i>next source<i></h1>
+</body>
+</html>
